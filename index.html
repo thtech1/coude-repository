@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-   
-  
+    <title>Solving Pain</title>
 </head>
+
 <body>
     <form class="form">
-        <p class="title">Formulário </p>
-        <div class="flex">
+        <p class="title">Solving Pain </p>
+        <p class="message">Seja bem-vindo! </p>
+        <div class="form-content">
             <label>
-                <input class="input" type="text" placeholder="" required="">
-                <span>Empresa</span>
+                <input class="input" type="text" placeholder required name="empresa" id="empresa">
+                <span>Empresa:</span>
             </label>
-        </div>  
-                
-        <label>
-            <input class="input" type="" placeholder="" required="">
-            <span>Seguimento</span>
-        </label> 
-            
-        <label>
-            <input class="input" type="text" placeholder="" required="">
-            <span>Qual a sua dor?</span>
-        </label>  
-        <button class="submit">Confirmar</button>
+
+            <label>
+                <input class="input" type="text" placeholder required name="setor" id="setor">
+                <span>Setor de atuação:</span>
+            </label>
+
+
+            <label>
+                <input class="input" type="email" placeholder required name="email" id="email">
+                <span>Email:</span>
+            </label>
+
+            <label>
+                <input class="input prompt" type="text" placeholder required name="descricao" id="descricao">
+                <span>Qual a sua dor?</span>
+            </label>
+            <button class="submit">Enviar</button>
+        </div>
     </form>
-    
 </body>
+
 </html>
