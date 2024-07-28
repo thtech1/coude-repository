@@ -23,11 +23,6 @@
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./images/logo.png"
-                                alt="Logo da cafeteria Serenatto"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
@@ -63,24 +58,24 @@
             <form class="formulario" id="form">
                 <div class="mb-3" style="width: 25rem;">
                     <label for="exampleFormControlInput1" class="form-label">Razão social</label>
-                    <input type="email" class="form-control bgcolor" id="enterprise">
+                    <input type="text" class="form-control bgcolor" id="enterprise" value="sfgsfgs">
                 </div>
                 <div class="mb-3" style="width: 25rem;">
                     <label for="exampleFormControlInput1" class="form-label">CNPJ</label>
-                    <input type="email" class="form-control bgcolor" id="documentNumber">
+                    <input type="number" class="form-control bgcolor" id="documentNumber"  value="sfgsfgs">
                 </div>
                 <div class="mb-3" style="width: 25rem;">
                     <label for="exampleFormControlInput1" class="form-label">Telefone</label>
-                    <input type="email" class="form-control bgcolor" id="phone">
+                    <input type="tel" class="form-control bgcolor" id="phone" value="sfgsfgs">
                 </div>
                 <div class="mb-3" style="width: 25rem;">
                     <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control bgcolor" id="email">
+                    <input type="email" class="form-control bgcolor" id="email" value="sfgsfgs">
                 </div>
 
                 <select class="form-select custom-select bgcolor" style="width: 25rem;" aria-label="Default select example" id="sector">
-                    <option selected>Categorias</option>
-                    <option value="1">Comercio</option>
+                    <option selected disabled>Categorias</option>
+                    <option selected value="1">Comercio</option>
                     <option value="2">Industria</option>
                     <option value="3">Serviços</option>
                     <option value="4">Atacadista</option>
@@ -91,7 +86,7 @@
                     <p class="subtitle">Frequência</p>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="frequency1">
-                        <label class="form-check-label" for="frequency1">
+                        <label class="form-check-label" for="   ">
                             Pouco frequente
                         </label>
                     </div>
@@ -116,19 +111,19 @@
                 <div class="impactos">
                     <div class="d-flex p-3 justify-content-center">
                         <div class="form-check mx-3">
-                            <input class="form-check-input" type="checkbox" value="" id="impact">
+                            <input class="form-check-input" type="checkbox" value="" name="impact[]">
                             <label class="form-check-label" for="flexCheckDefault">
                                 Funcionarios
                             </label>
                         </div>
                         <div class="form-check mx-3">
-                            <input class="form-check-input" type="checkbox" value="" id="impact" checked>
+                            <input class="form-check-input" type="checkbox" value="" name="impact[]" checked>
                             <label class="form-check-label" for="flexCheckChecked">
                                 Fornecedores
                             </label>
                         </div>
                         <div class="form-check mx-3">
-                            <input class="form-check-input" type="checkbox" value="" id="impact" checked>
+                            <input class="form-check-input" type="checkbox" value="" name="impact[]" checked>
                             <label class="form-check-label" for="flexCheckChecked">
                                 Clientes
                             </label>
@@ -136,19 +131,19 @@
                     </div>
                     <div class="d-flex p-3 justify-content-center">
                         <div class="form-check mx-3">
-                            <input class="form-check-input" type="checkbox" value="" id="impact" checked>
+                            <input class="form-check-input" type="checkbox" value="" name="impact[]" checked>
                             <label class="form-check-label" for="flexCheckChecked">
                                 Estoque
                             </label>
                         </div>
                         <div class="form-check mx-3">
-                            <input class="form-check-input" type="checkbox" value="" id="impact" checked>
+                            <input class="form-check-input" type="checkbox" value="" name="impact[]" checked>
                             <label class="form-check-label" for="flexCheckChecked">
                                 Produção
                             </label>
                         </div>
                         <div class="form-check mx-3">
-                            <input class="form-check-input" type="checkbox" value="" id="impact" checked>
+                            <input class="form-check-input" type="checkbox" value="" name="impact[]" checked>
                             <label class="form-check-label" for="flexCheckChecked">
                                 Logistica
                             </label>
@@ -158,9 +153,9 @@
 
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Defina sua dor:</label>
-                    <textarea class="form-control bgcolor" style="width: 25rem;" id="description" rows="2"></textarea>
+                    <textarea class="form-control bgcolor" style="width: 25rem;" id="description" rows="2">aoj aakglfjagçif </textarea>
                 </div>
-                <button type="button" style="width: 25rem;" class="btn btn-primary">Enviar</button>
+                <button type="submit" style="width: 25rem;" class="btn btn-primary">Enviar</button>
             </form>
         </div>
     </section>
