@@ -4,68 +4,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Solving Pain</title>
 </head>
 
 <body>
-    <form class="form" id="form">
-        <p class="title">Solving Pain </p>
-        <p class="message">Seja bem-vindo! </p>
-        <div class="form-content">
-            <label>
-                <input class="input" type="text" placeholder required name="empresa" id="empresa">
-                <span>Empresa:</span>
-            </label>
 
-            <label>
-                <input class="input" type="text" placeholder required name="seguimento" id="seguimento">
-                <span>Seguimento de atuação:</span>
-            </label>
-
-
-            <label>
-                <input class="input" type="email" placeholder required name="email" id="email">
-                <span>Email:</span>
-            </label>
-
-            <label>
-                <input class="input" type="text" placeholder required name="cep" id="cep">
-                <span>CEP:</span>
-            </label>
-
-            <div class="form-check d-inline-flex">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Default checkbox
-                </label>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./images/logo.png"
+                                alt="Logo da cafeteria Serenatto"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#formulario">Formulário</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contatos">Contato</a>
+                            </li>
+                    </div>
+                </div>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                <label class="form-check-label" for="flexCheckChecked">
-                    Checked checkbox
-                </label>
+        </nav>
+    </header>
+    <!-- Fim do navbar -->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/DESIGN/people-taking-part-business-event.jpg" class="d-block w-100" alt="...">
             </div>
-
-            <label>
-                <input class="input" type="text" placeholder required name="cidade" id="cidade">
-                <span>Cidade:</span>
-            </label>
-
-            <label>
-                <input class="input" type="text" placeholder required name="cnpj" id="cnpj">
-                <span>CNPJ:</span>
-            </label>
-
-            <label>
-                <input class="input prompt" type="text" placeholder required name="descricao" id="descricao">
-                <span>Qual a sua dor?</span>
-            </label>
-            <button class="submit" type="submit">Enviar</button>
         </div>
-    </form>
+    </div>
+
+    <!-- Formulário -->
+    <section>
+        <div class="container">
+            <div class="title">
+                <h1>FORMULÁRIO</h1>
+            </div>
+            <form class="formulario" id="form">
+                <div class="mb-3" style="width: 25rem;">
+                    <label for="exampleFormControlInput1" class="form-label">Razão social</label>
+                    <input type="email" class="form-control bgcolor" id="enterprise">
+                </div>
+                <div class="mb-3" style="width: 25rem;">
+                    <label for="exampleFormControlInput1" class="form-label">CNPJ</label>
+                    <input type="email" class="form-control bgcolor" id="documentNumber">
+                </div>
+                <div class="mb-3" style="width: 25rem;">
+                    <label for="exampleFormControlInput1" class="form-label">Telefone</label>
+                    <input type="email" class="form-control bgcolor" id="phone">
+                </div>
+                <div class="mb-3" style="width: 25rem;">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control bgcolor" id="email">
+                </div>
+
+                <select class="form-select custom-select bgcolor" style="width: 25rem;" aria-label="Default select example" id="sector">
+                    <option selected>Categorias</option>
+                    <option value="1">Comercio</option>
+                    <option value="2">Industria</option>
+                    <option value="3">Serviços</option>
+                    <option value="4">Atacadista</option>
+                    <option value="5">Varegista</option>
+                </select>
+
+                <div class="frequencia">
+                    <p class="subtitle">Frequência</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="frequency1">
+                        <label class="form-check-label" for="frequency1">
+                            Pouco frequente
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="frequency2"
+                            checked>
+                        <label class="form-check-label" for="frequency2">
+                            Frequente
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="frequency3"
+                            checked>
+                        <label class="form-check-label" for="frequency3">
+                            Muito Frequente
+                        </label>
+                    </div>
+                </div>
+
+                <p class="subtitle">Impactos setoriais</p>
+
+                <div class="impactos">
+                    <div class="d-flex p-3 justify-content-center">
+                        <div class="form-check mx-3">
+                            <input class="form-check-input" type="checkbox" value="" id="impact">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Funcionarios
+                            </label>
+                        </div>
+                        <div class="form-check mx-3">
+                            <input class="form-check-input" type="checkbox" value="" id="impact" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Fornecedores
+                            </label>
+                        </div>
+                        <div class="form-check mx-3">
+                            <input class="form-check-input" type="checkbox" value="" id="impact" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Clientes
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-flex p-3 justify-content-center">
+                        <div class="form-check mx-3">
+                            <input class="form-check-input" type="checkbox" value="" id="impact" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Estoque
+                            </label>
+                        </div>
+                        <div class="form-check mx-3">
+                            <input class="form-check-input" type="checkbox" value="" id="impact" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Produção
+                            </label>
+                        </div>
+                        <div class="form-check mx-3">
+                            <input class="form-check-input" type="checkbox" value="" id="impact" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Logistica
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Defina sua dor:</label>
+                    <textarea class="form-control bgcolor" style="width: 25rem;" id="description" rows="2"></textarea>
+                </div>
+                <button type="button" style="width: 25rem;" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <!-- end -->
 
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
